@@ -4,7 +4,7 @@
 
 /** \file Fifo.c
 * \brief Implementation of Fifo's functions using c
-* Can use several lines
+*
 *
 * The functions that were implemented are
 * MyFIFOInit(): inits the module
