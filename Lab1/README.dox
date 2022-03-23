@@ -1,0 +1,15 @@
+/**
+     @mainpage SETR2122 Doxygen use example
+     @author Charalampos Kontis
+     @author Evgenia Stavrianidou
+     @author Maria Chatzipetrou
+     The app implements a Fifo queue. The user can call the function MyFIFOInit() to initialise the 			         module, the function MyFIFOInsert to add an element to the FIFO, the function MyFIFORemove to remove an element from the FIFO, the function MyFIFOPeep() to return the oldest element on the FIFO, but without removing it and the MyFIFOSize() to return the number of elements on the FIFO.
+There is a restriction about the size of the Fifo at 200 elements.
+
+When it comes to how we use the functions,
+ MyFIFOInit() returns the status depending on the success or not of the function and it has as a parameter the size of the FIFO
+ MyFIFOInsert() returns the status depending on the success or not of the function and it has as a parameter the number you want to add
+ MyFIFORemove() returns the status depending on the success or not of the function 
+ MyFIFOPeep() returns the oldest element on the FIFO
+ MyFIFOSize() returns the number of elements on the Fifo
+     */

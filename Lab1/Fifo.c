@@ -62,19 +62,35 @@ const char* MyFIFOInsert(int num){
 * \return "Error" if the queue is full and "Success" if the addition of the element was successful.
 * \date 23/02/2022
 */
-	if(head == N){
-		head = 0;
-		return "Error";
-}
-	else{
+	int temp =0;
+	if(head == N){ 
+		
+		for (int i=0;i<N;i++){
+			temp++;
+			if (Array[i]==0){
+				head=i;
+				Array[head]=num;
+				head++;
+				for(int k = 0; k < N; k++) {
+			printf("%d ", Array[k]);
+	}
+				return "Success";
+			} else if(temp==N){
+				return "Error"; 
+		 		}
+		}
+
+		}else if(Array[head]!=0){return "Error";}
+		else{
+
 		Array[head] = num;
 		head++;
 		for(int i = 0; i < N; i++) {
-		printf("%d ", Array[i]);
+			printf("%d ", Array[i]);
 	}
-		return "Success";
+		return "Success"; }
 	
-	}
+	
 
 }
 
@@ -95,6 +111,7 @@ const char* MyFIFORemove(void){
 		return "Error";
 	}
 	else{
+
 		Array[tail] = 0;
 		tail++;
 		for(int i = 0; i < N; i++) {
